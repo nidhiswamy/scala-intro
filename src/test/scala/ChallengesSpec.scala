@@ -82,47 +82,47 @@ class ChallengesSpec extends AnyFreeSpec with Matchers {
   "getWeatherDescription" - {
     "should describe the weather conditions correctly" - {
       "for Sunny weather" ignore {
-//        val description = getWeatherDescription(WeatherCondition.Sunny)
-//        description shouldBe "It's a sunny day."
+       val description = getWeatherDescription(WeatherCondition.Sunny)
+       description shouldBe "It's a sunny day."
       }
 
       "for Cloudy weather" ignore {
-//        val description = getWeatherDescription(WeatherCondition.Cloudy)
-//        description shouldBe "It's a cloudy day."
+       val description = getWeatherDescription(WeatherCondition.Cloudy)
+       description shouldBe "It's a cloudy day."
       }
 
       "for Rainy weather" ignore {
-//        val description = getWeatherDescription(WeatherCondition.Rainy)
-//        description shouldBe "It's a rainy day."
+       val description = getWeatherDescription(WeatherCondition.Rainy)
+       description shouldBe "It's a rainy day."
       }
 
       "for Snowy weather" ignore {
-//        val description = getWeatherDescription(WeatherCondition.Snowy)
-//        description shouldBe "It's a snowy day."
+       val description = getWeatherDescription(WeatherCondition.Snowy)
+       description shouldBe "It's a snowy day."
       }
     }
   }
 
   "Notifications" - {
     "EmailNotification" in {
-//      val emailAddress = "user@example.com"
-//      val emailNotification = EmailNotification(emailAddress)
-//      val message = "Hello, this is an email"
-//      val formattedMessage = emailNotification.formatMessage(message)
-//      val result = emailNotification.sendNotification(message)
-//
-//      formattedMessage shouldBe s"Message: $message"
-//      result shouldBe s"Sending email to $emailAddress with message: $message"
+     val emailAddress = "user@example.com"
+     val emailNotification = EmailNotification(emailAddress)
+     val message = "Hello, this is an email"
+     val formattedMessage = emailNotification.formatMessage(message)
+     val result = emailNotification.sendNotification(message)
+
+     formattedMessage shouldBe s"Message: $message"
+     result shouldBe s"Sending email to $emailAddress with message: $message"
     }
     "SMSNotification" in {
-//      val phoneNumber = "07525015566"
-//      val smsNotification = SMSNotification(phoneNumber)
-//      val message = "Hello, this is an SMS"
-//      val formattedMessage = smsNotification.formatMessage(message)
-//      val result = smsNotification.sendNotification(message)
-//
-//      formattedMessage shouldBe s"Message: $message"
-//      result shouldBe s"Sending SMS to $phoneNumber: $message"
+     val phoneNumber = "07525015566"
+     val smsNotification = SMSNotification(phoneNumber)
+     val message = "Hello, this is an SMS"
+     val formattedMessage = smsNotification.formatMessage(message)
+     val result = smsNotification.sendNotification(message)
+
+     formattedMessage shouldBe s"Message: $message"
+     result shouldBe s"Sending SMS to $phoneNumber: $message"
     }
   }
 }
